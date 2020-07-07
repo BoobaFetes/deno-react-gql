@@ -1,0 +1,1 @@
+denon run --allow-net --allow-read ./server/app.ts

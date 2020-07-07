@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "name": "Debug server",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "deno",
+            "runtimeArgs": [
+                "run",
+                "--allow-net",
+                "--allow-read",
+                "--inspect-brk",
+                "./server/app.ts"
+            ],
+            "port": 9229
+        },
+    ]
+}
