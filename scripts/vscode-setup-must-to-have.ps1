@@ -1,5 +1,4 @@
-write-host "installation des packages pour le développement server (DENO + extensions)"
-Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Expression
+write-host "installation du CLI 'denon' pour aider au développement, et l'extension VSCODE "
 deno install --allow-read --allow-run --allow-write --allow-net -f --unstable https://deno.land/x/denon@v2.2.0/denon.ts
 code --install-extension denoland.vscode-deno
 
